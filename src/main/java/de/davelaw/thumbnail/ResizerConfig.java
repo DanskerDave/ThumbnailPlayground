@@ -46,6 +46,9 @@ import java.util.List;
  */
 public class ResizerConfig {
 
+	/** Resize Multiplier */ private static final int  RESIZE_FACTOR         = 2;
+	/** A "few" Pixels    */ public  static final int  RESIZE_SKIP_THRESHOLD = 3;
+
 	private ResizerConfig() {/* Please do not instantiate */}
 
 	/**
@@ -67,9 +70,6 @@ public class ResizerConfig {
 		}
 		return new Dimension(width, height);
 	}
-
-	/** Resize Multiplier */ private static final int  RESIZE_FACTOR         = 2;
-	/** A "few" Pixels    */ public  static final int  RESIZE_SKIP_THRESHOLD = 3;
 
 	/**
 	 * Get the Intermediate-Target sizes.
